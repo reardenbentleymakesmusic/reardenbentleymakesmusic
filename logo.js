@@ -53,7 +53,7 @@ for(square of squares) {
   drawSquare(square.x, square.y);
 }
 
-ctx.addEventListener('mousedown', e => {
+canvas.addEventListener('mousedown', e => {
   let cursorX = Math.floor((e.offsetX)/scale);
   let cursorY = Math.floor((e.offsetY)/scale);
   for(square of squares) {
