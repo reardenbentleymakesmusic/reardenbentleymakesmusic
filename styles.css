@@ -6,6 +6,10 @@ table {
   border: collapse;
 }
 
+a {
+  color: #ffffff;
+}
+
 .text {
   font-family: "Arial";
   color: #ffffff;
