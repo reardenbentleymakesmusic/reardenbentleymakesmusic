@@ -14,6 +14,7 @@ a {
 .text {
   font-family: "Arial";
   color: #ffffff;
+  margin: 4px;
 }
 
 .tablehead {
