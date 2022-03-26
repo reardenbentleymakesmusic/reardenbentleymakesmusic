@@ -58,7 +58,7 @@ canvas.addEventListener('mousedown', e => {
   let cursorY = Math.floor((e.offsetY)/scale);
   for(square of squares) {
     if(cursorX == square.x && cursorY == square.y) {
-      squares.indexOf(square) = new Square(cursorX, cursorY, false)
+      squares[squares.indexOf(square)] = new Square(cursorX, cursorY, false)
     }
   }
 });
