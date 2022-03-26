@@ -17,10 +17,11 @@ function drawSquare(x, y, white) {
 }
 
 class Square {
-  constructor(x, y) {
+  constructor(x, y, white) {
     this.x = x;
     this.y = y;
-    drawSquare(x, y);
+    this.white = white;
+    drawSquare(x, y, white);
   }
 }
 
