@@ -1,33 +1,63 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
-ctx.fillStyle = "#ffffff";
-
 let scale = 50;
 
-function drawSquare(x, y) {
+function newRandomColor() {
+  return '#' + Math.floor(Math.random()*16777216).toString(16);
+}
+
+function drawSquare(x, y, white) {
+  if(white == true) {
+    ctx.fillStyle = "#ffffff";
+  } else {
+    ctx.fillStyle = newRandomColor();
+  }
   ctx.fillRect(x*scale, y*scale, scale, scale);
 }
 
-drawSquare(0, 1);
-drawSquare(0, 2);
-drawSquare(0, 3);
-drawSquare(0, 4);
-drawSquare(0, 5);
-drawSquare(1, 1);
-drawSquare(1, 3);
-drawSquare(2, 1);
-drawSquare(2, 2);
-drawSquare(2, 4);
-drawSquare(2, 5);
+class Square {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    drawSquare(x, y);
+  }
+}
 
-drawSquare(4, 1);
-drawSquare(4, 2);
-drawSquare(4, 3);
-drawSquare(4, 4);
-drawSquare(4, 5);
-drawSquare(5, 1);
-drawSquare(5, 3);
-drawSquare(5, 5);
-drawSquare(6, 2);
-drawSquare(6, 4);
+let squares = [
+  new Square(0, 1, true),
+  new Square(0, 2, true),
+  new Square(0, 3, true),
+  new Square(0, 4, true),
+  new Square(0, 5, true),
+  new Square(1, 1, true),
+  new Square(1, 3, true),
+  new Square(2, 1, true),
+  new Square(2, 2, true),
+  new Square(2, 4, true),
+  new Square(2, 5, true),
+  new Square(4, 1, true),
+  new Square(4, 2, true),
+  new Square(4, 3, true),
+  new Square(4, 4, true),
+  new Square(4, 5, true),
+  new Square(5, 1, true),
+  new Square(5, 3, true),
+  new Square(5, 5, true),
+  new Square(6, 2, true),
+  new Square(6, 4, true)
+];
+
+for(square of squares) {
+  drawSquare(square.x, square.y);
+}
+
+ctx.addEventListener('mousedown', e => {
+  let cursorX = Math.floor((e.offsetX)/scale);
+  let cursorY = Math.floor((e.offsetY)/scale);
+  for(square of squares) {
+    if(cursorX == square.x && cursorY == square.y) {
+      squares.indexOf(square) = new Square(cursorX, cursorY, false)
+    }
+  }
+});
