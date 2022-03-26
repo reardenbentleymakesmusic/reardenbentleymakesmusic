@@ -21,7 +21,7 @@ class Square {
     this.x = x;
     this.y = y;
     this.white = white;
-    drawSquare(x, y, white);
+    drawSquare(this.x, this.y, this.white);
   }
 }
 
