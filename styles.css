@@ -11,6 +11,10 @@ a {
   color: #ffffff;
 }
 
+canvas {
+  padding-left: 10px;
+}
+
 .text {
   font-family: "Arial";
   color: #ffffff;
