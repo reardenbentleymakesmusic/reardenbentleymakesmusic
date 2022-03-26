@@ -3,7 +3,7 @@ body {
 }
 
 table {
-  border: none;
+  border: collapse;
 }
 
 .text {
