@@ -2,9 +2,10 @@ body {
   background-color: #000000;
 }
 
-table, td {
+td {
   border: 1px solid #ffffff;
   border-collapse: collapse;
+  padding: 4px;
 }
 
 a {
@@ -18,7 +19,6 @@ canvas {
 .text {
   font-family: "Arial";
   color: #ffffff;
-  margin: 4px;
 }
 
 .tablehead {
