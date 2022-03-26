@@ -3,8 +3,8 @@ body {
 }
 
 table {
-  border: collapse;
-  border-color: #ffffff;
+  border: #ffffff;
+  border-collapse: collapse;
 }
 
 a {
