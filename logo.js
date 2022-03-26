@@ -1,32 +1,33 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
+ctx.fillStyle = "#ffffff";
+
 let scale = 50;
 
-drawSquare(0*scale, 1*scale);
-drawSquare(0*scale, 2*scale);
-drawSquare(0*scale, 3*scale);
-drawSquare(0*scale, 4*scale);
-drawSquare(0*scale, 5*scale);
-drawSquare(1*scale, 1*scale);
-drawSquare(1*scale, 3*scale);
-drawSquare(2*scale, 1*scale);
-drawSquare(2*scale, 2*scale);
-drawSquare(2*scale, 4*scale);
-drawSquare(2*scale, 5*scale);
-
-drawSquare(4*scale, 1*scale);
-drawSquare(4*scale, 2*scale);
-drawSquare(4*scale, 3*scale);
-drawSquare(4*scale, 4*scale);
-drawSquare(4*scale, 5*scale);
-drawSquare(5*scale, 1*scale);
-drawSquare(5*scale, 3*scale);
-drawSquare(5*scale, 5*scale);
-drawSquare(6*scale, 2*scale);
-drawSquare(6*scale, 4*scale);
-
 function drawSquare(x, y) {
-  ctx.fillStyle = #ffffff;
-  ctx.fillRect(x, y, scale, scale);
+  ctx.fillRect(x*scale, y*scale, scale, scale);
 }
+
+drawSquare(0, 1);
+drawSquare(0, 2);
+drawSquare(0, 3);
+drawSquare(0, 4);
+drawSquare(0, 5);
+drawSquare(1, 1);
+drawSquare(1, 3);
+drawSquare(2, 1);
+drawSquare(2, 2);
+drawSquare(2, 4);
+drawSquare(2, 5);
+
+drawSquare(4, 1);
+drawSquare(4, 2);
+drawSquare(4, 3);
+drawSquare(4, 4);
+drawSquare(4, 5);
+drawSquare(5, 1);
+drawSquare(5, 3);
+drawSquare(5, 5);
+drawSquare(6, 2);
+drawSquare(6, 4);
