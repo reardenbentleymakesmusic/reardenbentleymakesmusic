@@ -1,7 +1,7 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
-let scale = 60;
+let scale = 50;
 
 drawSquare(0*scale, 1*scale);
 drawSquare(0*scale, 2*scale);
