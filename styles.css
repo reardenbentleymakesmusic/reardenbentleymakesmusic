@@ -2,6 +2,10 @@ body {
   background-color: #000000;
 }
 
+table {
+  border: none;
+}
+
 .text {
   font-family: "Arial";
   color: #ffffff;
