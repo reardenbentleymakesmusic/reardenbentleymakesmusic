@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: #000000;
 }
@@ -14,6 +19,14 @@ a {
 
 canvas {
   margin-left: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:60px;
 }
 
 .text {
