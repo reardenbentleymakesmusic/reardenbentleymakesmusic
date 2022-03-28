@@ -5,6 +5,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #000000;
 }
 
@@ -29,7 +32,7 @@ footer {
 }
 
 .content {
-  margin-bottom: 50px;
+  flex: 1 0 auto;
 }
 
 .text {
