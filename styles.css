@@ -21,15 +21,14 @@ canvas {
 }
 
 footer {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
 }
 
 .content {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
+  padding-bottom: 50px;
 }
 
 .text {
