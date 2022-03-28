@@ -1,13 +1,7 @@
 
-html {
+body {
   position: relative;
   min-height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background-color: #000000;
 }
 
@@ -26,13 +20,13 @@ canvas {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: 50px;
 }
 
 .content {
-  flex: 1 0 auto;
+  padding-bottom: 50px;
 }
 
 .text {
