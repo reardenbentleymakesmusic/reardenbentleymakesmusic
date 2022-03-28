@@ -25,6 +25,11 @@ canvas {
 footer {
   position: fixed;
   bottom: 0;
+  height: 50px;
+}
+
+.content {
+  margin-bottom: -50px;
 }
 
 .text {
