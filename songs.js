@@ -8,9 +8,11 @@ $(document).ready(function(){
     $(this).hide()
   }
   
-  $("count").click(function(){
-    let index = counts.indexOf($(this));
-    $(songs[index]).toggle();
-  });
+  forEach(counts) {
+    $(this).click(function(){
+      let index = counts.indexOf($(this));
+      $(songs[index]).toggle();
+    });
+  }
   
 });
