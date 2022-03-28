@@ -23,8 +23,8 @@ canvas {
 
 footer {
   position: absolute;
-  bottom: 0;
-  height:60px;
+  bottom: 30px;
+  top: 30px;
 }
 
 .text {
