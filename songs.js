@@ -7,7 +7,7 @@ $(document).ready(function(){
     let index = $(this).attr('id').substring(5);
     let name = "songs" + index;
     $("[id^='songs']").hide();
-    $("#" + name).show();
+    $("#" + name).toggle();
   });
   
 });
