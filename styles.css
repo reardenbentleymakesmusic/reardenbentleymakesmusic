@@ -42,6 +42,10 @@ footer {
   font-weight: bold;
 }
 
+.fixedcell {
+  table-layout: fixed;
+}
+
 .disableselect {
   user-select: none;
   -webkit-user-select: none;
