@@ -5,6 +5,10 @@ body {
   background-color: #000000;
 }
 
+table {
+  white-space: nowrap;
+}
+
 td, th {
   border: 1px solid #ffffff;
   border-collapse: collapse;
@@ -40,10 +44,6 @@ footer {
   font-family: "Arial";
   color: #ffffff;
   font-weight: bold;
-}
-
-.fixedcell {
-  table-layout: fixed;
 }
 
 .disableselect {
