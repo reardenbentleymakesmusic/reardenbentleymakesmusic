@@ -1,15 +1,13 @@
 
 $(document).ready(function(){
 
-  let counts = Array.from(document.querySelectorAll("[id^='count']"));
-  let songs = Array.from(document.querySelectorAll("[id^='songs']"));
-  
   $("[id^='songs']").hide();
   
   $("[id^='count']").click(function(){
     $(this).click(function(){
-      let index = counts.indexOf($(this));
-      $(songs[index]).toggle();
+      let index = $(this).id.substring(5);
+      let name = "songs" + index;
+      $(name).toggle();
     });
   });
   
