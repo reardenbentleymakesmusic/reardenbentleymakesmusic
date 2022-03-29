@@ -6,7 +6,7 @@ $(document).ready(function(){
   $("[id^='count']").click(function(){
     let index = $(this).attr('id').substring(5);
     let name = "songs" + index;
-    $('name').toggle();
+    $("#" + name).toggle();
   });
   
 });
