@@ -4,11 +4,9 @@ $(document).ready(function(){
   $("[id^='songs']").hide();
   
   $("[id^='count']").click(function(){
-    $(this).click(function(){
-      let index = $(this).id.substring(5);
-      let name = "songs" + index;
-      $(name).toggle();
-    });
+    let index = $(this).id.substring(5);
+    let name = "songs" + index;
+    $(name).toggle();
   });
   
 });
