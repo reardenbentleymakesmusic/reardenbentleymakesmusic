@@ -82,7 +82,5 @@ $("#partymode").click(function() {
 });
 
 while(partymode) {
-  setInterval(function() {
-    setSquares();
-  }, 500);
+  setInterval(setSquares(), 500);
 }
