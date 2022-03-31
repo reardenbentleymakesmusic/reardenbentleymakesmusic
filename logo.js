@@ -81,10 +81,12 @@ $("#partymode").click(function() {
     initial = false;
     partymode = true;
     $(this).text("party mode on");
-    repeat = setInterval(function() {setSquares();console.log("party mode on");}, 500);
+    repeat = setInterval(function() {setSquares();}, 500);
   } else {
+    initial = true;
     partymode = false;
     $(this).text("party mode off");
     clearInterval(repeat);
+    setSquares();
   }
 });
