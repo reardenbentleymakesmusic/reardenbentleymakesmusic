@@ -72,6 +72,7 @@ canvas.addEventListener('mousedown', e => {
 
 $("#partymode").click(function() {
   if(partymode == false) {
+    initial = false;
     partymode = true;
     $(this).text("party mode on");
   } else {
