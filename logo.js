@@ -74,14 +74,17 @@ canvas.addEventListener('mousedown', e => {
   }
 });
 
+let repeat;
+
 $("#partymode").click(function() {
   if(partymode == false) {
     initial = false;
     partymode = true;
     $(this).text("party mode on");
-    setInterval(function() {setSquares();console.log("party mode on");}, 500);
+    repeat = setInterval(function() {setSquares();console.log("party mode on");}, 500);
   } else {
     partymode = false;
     $(this).text("party mode off");
+    clearInterval(repeat);
   }
 });
