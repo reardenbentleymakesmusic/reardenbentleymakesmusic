@@ -50,34 +50,11 @@ let squares = [
   new Square(6, 2),
   new Square(6, 4)
 ];
-for(square of squares) {
-  drawSquare(square.x, square.y);
-}
 
 function setSquares() {
-  squares = [
-    new Square(0, 1),
-    new Square(0, 2),
-    new Square(0, 3),
-    new Square(0, 4),
-    new Square(0, 5),
-    new Square(1, 1),
-    new Square(1, 3),
-    new Square(2, 1),
-    new Square(2, 2),
-    new Square(2, 4),
-    new Square(2, 5),
-    new Square(4, 1),
-    new Square(4, 2),
-    new Square(4, 3),
-    new Square(4, 4),
-    new Square(4, 5),
-    new Square(5, 1),
-    new Square(5, 3),
-    new Square(5, 5),
-    new Square(6, 2),
-    new Square(6, 4)
-  ];
+  for(square of squares) {
+    squares[squares.indexOf(square)] = new Square(square.x, square.y);
+  }
   
   for(square of squares) {
     drawSquare(square.x, square.y);
@@ -109,5 +86,5 @@ $("#partymode").click(function() {
 });
 
 while(partymode) {
-  setInterval(setSquares(), 500);
+  setInterval(function() {setSquares();console.log("party mode on");}, 500);
 }
