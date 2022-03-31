@@ -79,12 +79,9 @@ $("#partymode").click(function() {
     initial = false;
     partymode = true;
     $(this).text("party mode on");
+    setInterval(function() {setSquares();console.log("party mode on");}, 500);
   } else {
     partymode = false;
     $(this).text("party mode off");
   }
 });
-
-while(partymode) {
-  setInterval(function() {setSquares();console.log("party mode on");}, 500);
-}
