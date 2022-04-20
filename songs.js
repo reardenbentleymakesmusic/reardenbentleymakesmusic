@@ -6,8 +6,12 @@ $(document).ready(function(){
   $("[id^='count']").click(function(){
     let index = $(this).attr('id').substring(5);
     let name = "songs" + index;
-    $("[id^='songs']").hide();
-    $("#" + name).toggle();
+    if($("#" + name).is(':visible')) {
+      $("#" + name).toggle();
+    } else {
+      $("[id^='songs']").hide();
+      $("#" + name).toggle();
+    }
   });
   
 });
