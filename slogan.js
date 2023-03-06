@@ -1,4 +1,4 @@
-slogans = [
+let slogans = [
   "have as much fun as you want.",
   "don't break your headphones.",
   "get the party started.",
