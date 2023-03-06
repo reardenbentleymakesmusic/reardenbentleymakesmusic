@@ -10,4 +10,4 @@ let slogans = [
   "i'm always learning."
 ];
 
-document.getElementById(slogan).innerHTML = slogans[Math.floor(Math.random() * slogans.length)];
+document.getElementById("slogan").innerHTML = slogans[Math.floor(Math.random() * slogans.length)];
