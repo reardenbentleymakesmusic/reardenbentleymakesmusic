@@ -31,6 +31,14 @@ footer {
   background-color: #000000;
 }
 
+.textbox {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  padding: 4px;
+  font-family: "Arial";
+  color: #ffffff;
+}
+
 .content {
   padding-bottom: 50px;
 }
